@@ -2,13 +2,12 @@ import React from "react";
 import { GlobeIcon } from "@radix-ui/react-icons";
 import { TwitterLogoIcon } from "@radix-ui/react-icons";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
-import { FacebookLogoIcon } from "@radix-ui/react-icons";
 
 
 
-const Footer = () => {
+const AirbnbFooter = () => {
   return (
-    <footer className="bg-gray-100 p-8">
+    <footer class="px-40 py-16 flex flex-col items-start gap-12 w-full bg-gray-50">
       {/* Links Section */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
         <div>
@@ -86,4 +85,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default AirbnbFooter;
