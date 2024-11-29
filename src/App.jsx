@@ -3,6 +3,7 @@ import Navbar from "./Navbar"; // Ensure correct path for Navbar
 import AirbnbFooter from "./AirbnbFooter"; // Ensure correct path for AirbnbFooter
 import AirbnbSearch from "./AirbnbSearch";
 import BigCardImage from "../src/assets/airbn-home-backgrd.PNG"; 
+import Inspirations from "./Inspirations";
 
 const App = () => {
   return (
@@ -36,9 +37,9 @@ const App = () => {
       </div>
 
       {/* Inspirations Section */}
-      {/* <div className="w-full px-4 lg:px-20 py-6 lg:py-12 bg-white">
+      <div className="w-full px-4 lg:px-20 py-6 lg:py-12 bg-white">
         <Inspirations />
-      </div> */}
+      </div>
 
       {/* Footer */}
       <AirbnbFooter />
