@@ -1,42 +1,25 @@
 How to test components:
 
-Go to Main.jsx file, 
+Go to Main.jsx file,
 
-1. To test homepage components separatelty you cam unxomment each component at a time or 
-2. To test the whole homepage at once you can comment all components and uncomment only app component to render as shown below. 
+1. To test homepage components separatelty you cam unxomment each component at a time or
+2. To test the whole homepage at once you can comment all components and uncomment only app component to render as shown below.
 
- import { StrictMode } from 'react'
+reateRoot(document.getElementById('root')).render(
+<StrictMode>
+{/\* <div className="flex flex-col gap-8 p-10 bg-white">
 
- import { createRoot } from 'react-dom/client'
+      <AirbnbListingNavBar />
 
- import './index.css'
+      <ListingContents />
+      <ListingExploreFooter/>
+      <ListingReviews />
+      <ListingExploreFooter/>
+      <AirbnbFooter/>
 
- import App from './App.jsx'
+    </div>
+     */}
+    <App />
 
- import Navbar from './Navbar.jsx'
-
- import AirbnbSearch from './AirbnbSearch.jsx'
-
- import Inspirations from './Inspirations.jsx'
-
- import AirbnbFooter from './AirbnbFooter.jsx'
-
-
- createRoot(document.getElementById('root')).render(
-
-  <StrictMode>
-
-    {/* <Navbar /> */}
-
-    {/* <AirbnbSearch /> */}
-
-    {/* <Inspirations/> */}
-
-    {/* <AirbnbFooter/> */}
-    
-    
-    <App/>
-
-  </StrictMode>,
-
- )
+</StrictMode>,
+)
